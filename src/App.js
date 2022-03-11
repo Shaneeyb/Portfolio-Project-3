@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './components/MainComponent';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 //import HomeComponent from "./components/homeComponent.js"
 
 
@@ -12,7 +14,9 @@ return (
         height: '100%',
   		minHeight : '100vh'
 	}}>
-		<Main />
+		<ParallaxProvider>
+			<Main />
+		</ParallaxProvider>
 	</div>
 );
 }
