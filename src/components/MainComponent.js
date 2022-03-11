@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import About from "./AboutComponent";
 import Home from "./HomeComponent";
 import NavbarComponent from "./NavbarComponent";
 import RecentWork from "./RecentWorkComponent";
+import Skills from "./SkillsComponent";
 
 
 
@@ -11,8 +13,10 @@ function Main() {
     <div>
       <div>    
         <NavbarComponent />
-        <Home />      
+        <Home />
         <RecentWork />
+        <About />
+        <Skills />
       </div>
     </div>
   );

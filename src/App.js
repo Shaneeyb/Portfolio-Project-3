@@ -9,7 +9,7 @@ return (
 	<div style={{
 		backgroundColor: "#FFFAF3",
 		color: "#2D2D2D",
-        height: '100vh',
+        height: '100%',
   		minHeight : '100vh'
 	}}>
 		<Main />
