@@ -9,19 +9,30 @@ function RecentWork() {
   return (
     <div>
       <ParallaxProvider>
-          <Parallax translateY={[-20, 20]}>
-              <img src={water} style={{
-                  width: "100%"
-              }}>
-                  </img>
+          <Parallax strength={800} style={{
+            backgroundImage: {water},
+            //backgroundImage: "../ParallaxImg/water.avif",
+            position: "relative",
+            height: "20vh"
+          }}>
+            <div className="content" style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+              height: "100vh",
+              width: "100vw"
+            }}>
+              <span className="img-text">Text here</span>
+            </div>
+          </Parallax>
+
           <h1 style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               height: "10vh",
             }}>My Recent Work</h1>
-
-            </Parallax>
      
       
 
@@ -112,4 +123,13 @@ export default RecentWork;
               height: "10vh",
             }}>My Recent Work</h1>
         </ParallaxImg>
+
+
+        style={{
+            backgroundAttachment: "fixed",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            display: "flex",
+            
+          }}
 */
