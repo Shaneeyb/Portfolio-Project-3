@@ -8,30 +8,32 @@ import water from "../ParallaxImg/water.avif";
 function RecentWork() {
   return (
     <div>
-      <ParallaxProvider>
-          <Parallax strength={800} style={{
-            backgroundImage: {water},
-            //backgroundImage: "../ParallaxImg/water.avif",
-            position: "relative",
-            height: "20vh"
-          }}>
-            <div className="content" style={{
-              display: "flex",
-              alignItems: "center",
+   
+      <div className="parallaxImg" style={{
+        backgroundAttachment: "fixed",
+        backgroundImage: 'url(' + water + ')',
+        display: "flex",
+              objectFit: "cover",
               justifyContent: "center",
-              position: "relative",
-              height: "100vh",
-              width: "100vw"
-            }}>
-              <span className="img-text">Text here</span>
-            </div>
-          </Parallax>
+              alignItems: "center",
+              width: "100%",
+              height: "30vh",
+              zIndex: "1",
+              opacity: "80%",
+              backgroundRepeat: "no-repeat"
+      }}>
+
+      <div class="center">
+        <h1>My Recent Work </h1>
+      </div>
+    </div>
 
           <h1 style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               height: "10vh",
+              opacity: "100%"
             }}>My Recent Work</h1>
      
       
@@ -94,20 +96,6 @@ function RecentWork() {
           </div>
         </div>
       </div>
-      <Parallax translateY={[-20, 20]}>
-              <img src={water} style={{
-                  width: "100%"
-              }}>
-                  </img>
-          <h1 style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "10vh",
-            }}>My Recent Work</h1>
-
-            </Parallax>
-      </ParallaxProvider>
     </div>
   );
 }
@@ -115,14 +103,14 @@ export default RecentWork;
 
 
 /*
-   <ParallaxImg imgsrc={water} height="300px" opacity=".5">
+   <img src={water} height="300px" opacity=".5">
             <h1 style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               height: "10vh",
             }}>My Recent Work</h1>
-        </ParallaxImg>
+        </img>
 
 
         style={{

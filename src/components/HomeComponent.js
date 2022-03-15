@@ -5,7 +5,9 @@ import React from "react";
 function Home() {
 
   return (
-    <div>
+    <div style={{
+        padding: "40px"
+    }}>
         <div className="container">
             <div className="row">
                 <div className="col">
